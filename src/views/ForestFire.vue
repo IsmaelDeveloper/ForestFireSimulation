@@ -1,3 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ForestFireSimulation from '@/components/ForestFireSimulation.vue'
+import config from '@/assets/forestFire/forestFire.json'
 
-<template></template>
+// use data import from forestFire.json
+const gridWidth = config.gridWidth
+const gridHeight = config.gridHeight
+const initialFirePositions = config.initialFirePositions
+const propagationProbability = config.propagationProbability
+</script>
+
+<template>
+  <div class="forest-fire">
+    <h1>Forest fire Simulation</h1>
+    <ForestFireSimulation
+      :width="gridWidth"
+      :height="gridHeight"
+      :initialFirePositions="initialFirePositions"
+      :propagationProbability="propagationProbability"
+    />
+  </div>
+</template>
