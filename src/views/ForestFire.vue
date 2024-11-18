@@ -11,7 +11,6 @@ const propagationProbability = config.propagationProbability
 
 <template>
   <div class="forest-fire">
-    <h1>Forest fire Simulation</h1>
     <ForestFireSimulation
       :width="gridWidth"
       :height="gridHeight"

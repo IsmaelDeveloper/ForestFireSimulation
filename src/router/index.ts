@@ -8,6 +8,7 @@ const router = createRouter({
       path: '/',
       name: 'forestFire',
       component: ForestFire,
+      meta: { title: 'Forest fire simulation' }, // meta title
     },
     {
       path: '/about',
